@@ -2,16 +2,14 @@
 //
 
 #include "pch.h"
-#include <stdio.h>
-#include "casilla.h"
+#include "tablero.h"
 
 int main()
 {
-	Casilla *prueba;
-	char name[50] = "Meh";
+	tablero *tab = new tablero();
 
-	CreaCasilla(&prueba, 0,name, 0, 0, 0, 0, 0);
-	printf("Type: %d ",prueba->type);
+	tab->ImprimeTablero();
+
 	return 0;
 }
 

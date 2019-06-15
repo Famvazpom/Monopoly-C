@@ -1,11 +1,12 @@
 #pragma once
-#include "casilla.cpp"
-
+#include "casilla.h"
 class tablero
 {
 public:
 	tablero();
 	~tablero();
-	Casilla *table;
+	Casilla mapa[40];	
+	void CreaTablero();
+	void ImprimeTablero();
 };
 

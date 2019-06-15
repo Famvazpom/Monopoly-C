@@ -22,7 +22,7 @@ typedef struct Casilla
 		Caso especial:
 			owner == -1 <---- No se a comprado ( Propiedad del banco )
 	*/
-
+	int linea;			//Color al que pertenecen
 	int base_loan;		//Alquiler base
 	int actual_loan;	//Alquiler actual
 
@@ -38,4 +38,4 @@ typedef struct Casilla
 	*/
 };
 
-void CreaCasilla(Casilla **item, int type, char name[50], int base_loan, int house_price, int hotel_price, int price, int effect);
+void CreaCasilla(Casilla *item, int type, char name[50],int color, int base_loan, int house_price, int hotel_price, int price, int effect);
