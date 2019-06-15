@@ -30,3 +30,16 @@
 *.exe
 *.out
 *.app
+Debug/vc141.pdb
+Debug/vc141.idb
+Debug/Monopoly C.tlog/Monopoly C.lastbuildstate
+Debug/Monopoly C.tlog/link.write.1.tlog
+Debug/Monopoly C.tlog/link.read.1.tlog
+Debug/Monopoly C.tlog/link.command.1.tlog
+Debug/Monopoly C.tlog/CL.write.1.tlog
+Debug/Monopoly C.tlog/CL.read.1.tlog
+Debug/Monopoly C.tlog/CL.command.1.tlog
+Debug/Monopoly C.log
+Monopoly C.vcxproj
+Monopoly C.vcxproj.filters
+Monopoly C.vcxproj.user
