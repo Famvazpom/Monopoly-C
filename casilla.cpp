@@ -3,7 +3,8 @@
 #include "casilla.h"
 
 
-void CreaCasilla(Casilla *item,int type, char name[50],int color, int base_loan, int house_price, int hotel_price, int price,int effect)
+
+void Casilla::CreaCasilla(int type, char name[50],int color, int base_loan, int house_price, int hotel_price, int price,int effect)
 {
 	/*
 		Esta funcion creara las casillas del tablero.
@@ -18,15 +19,15 @@ void CreaCasilla(Casilla *item,int type, char name[50],int color, int base_loan,
 			int hotel_price <- El precio de construccion de un hotel
 			int price <- El precio de compra de la casilla
 	*/
-	item->type = type;
-	item->actual_loan = item->base_loan = base_loan;
-	item->hotel_price = hotel_price;
-	item->house_price = house_price;
-	item->price = price;
-	item->owner = -1;
-	item->effect = effect;
-
-	strcpy_s(item->name, strlen(item->name), name);
+	this->type = type;
+	this->actual_loan = this->base_loan = base_loan;
+	this->hotel_price = hotel_price;
+	this->house_price = house_price;
+	this->price = price;
+	this->owner = -1;
+	this->effect = effect;
+	this->status = 1;
+	strcpy_s(this->name, 50, name);
 
 	return;
 }

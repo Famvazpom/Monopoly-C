@@ -3,13 +3,18 @@
 
 #include "pch.h"
 #include "tablero.h"
+#include "jugador.h"
 
 int main()
 {
 	tablero *tab = new tablero();
+	jugador *p1 = new jugador();
 
-	tab->ImprimeTablero();
-
+	p1->posicion = 0;
+	p1->Mover_Jugador(2,tab);
+	printf("Dinero: %d Posicion: %d Libre: %d",p1->money,p1->posicion,p1->free);
+	
+	delete p1, tab;
 	return 0;
 }
 

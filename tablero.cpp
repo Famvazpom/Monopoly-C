@@ -71,11 +71,17 @@ void tablero::CreaTablero()
 		-1,7,7,-1,7,9,-1,8,-1,8
 	};
 
+	int prices[40] =
+	{
+		-1,50,-1,50,-1,200,100,-1,100,120,
+		-1,140,150,140,160,200,180,-1,180,200,
+		-1,220,-1,220,240,200,250,250,150,280,
+		-1,300,300,-1,320,200,-1,250,-1,400,
+	};
 
 	for (int i = 0; i < 40; i++)
 	{
-		CreaCasilla(&this->mapa[i], types[i], name[i],colores[i], 0, 0, 0, 0, 0);
-
+		this->mapa[i].CreaCasilla(types[i], name[i],colores[i], 0, 0, 0, prices[i], 0);
 	}
 
 }
@@ -84,6 +90,6 @@ void tablero::ImprimeTablero()
 {
 	for (int i = 0; i < 40; i++)
 	{
-		printf("NOMBRE:%s TIPO: %d \n", this->mapa[i].name,this->mapa[i].type);
+		printf("NOMBRE:%s TIPO: %d PRECIO: %d \n", this->mapa[i].name,this->mapa[i].type,this->mapa[i].price);
 	}
 }

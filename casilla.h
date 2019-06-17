@@ -1,6 +1,9 @@
 #pragma once
-typedef struct Casilla
+
+class Casilla
 {
+public:
+
 	char name[50]; 		// Nombre de la casilla 
 	int type; 			// Tipo de casilla
 	/*
@@ -16,7 +19,13 @@ typedef struct Casilla
 	*/
 
 	int price;  		//Precio de la casilla 
-
+	int status;			//Estado de la casilla
+	/*
+		Existen 3 estados:
+		1.- Disponible para compra
+		2.- Comprada
+		3.- Hipotecada
+	*/
 	int owner;			//Jugador que posee la casilla
 	/*
 		Caso especial:
@@ -32,10 +41,18 @@ typedef struct Casilla
 	int hotels;			//Cantidad de hoteles en la casilla
 	int hotel_price;	//Precio por construccion de hotel
 
+	int valor_hipoteca;	//Valor de hipoteca
 	int effect;			//El indicador del efecto que realiza
 	/*
 		Solo los tipos 0,1,3,4 y 7 tienen lugar
 	*/
+
+	//Metodos
+	/*
+		CreaCasilla <- Este crea la casilla correspondiente
+		ActualizaRenta <- Actualiza la renta
+	*/
+	void CreaCasilla(int type, char name[50], int color, int base_loan, int house_price, int hotel_price, int price, int effect);
+	void Actualiza_Renta(Casilla *mapa);
 };
 
-void CreaCasilla(Casilla *item, int type, char name[50],int color, int base_loan, int house_price, int hotel_price, int price, int effect);
