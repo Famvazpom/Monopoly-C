@@ -5,7 +5,6 @@ class jugador
 {
 public:
 	jugador();
-	~jugador();
 	int money; //Dinero que posee el jugador
 	int posicion; // Posicion actual del jugador
 	bool free;

@@ -1,5 +1,5 @@
 #pragma once
-#include "casilla.h"
+#include "casilla.cpp"
 class tablero
 {
 public:

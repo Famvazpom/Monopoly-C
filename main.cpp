@@ -2,21 +2,20 @@
 //
 
 #include "pch.h"
-#include "tablero.h"
-#include "jugador.h"
+#include "game.cpp"
 
 int main()
 {
-	tablero *tab = new tablero();
-	jugador *p1 = new jugador();
-
-	p1->posicion = 0;
-	p1->Mover_Jugador(2,tab);
-	printf("Dinero: %d Posicion: %d Libre: %d",p1->money,p1->posicion,p1->free);
+	Game *juego;
+	juego = new Game();
+	juego->MuestraJugadores();
+	juego->Realiza_Turno();
 	
-	delete p1, tab;
+	delete juego;
 	return 0;
 }
+
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu

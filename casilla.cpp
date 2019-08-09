@@ -27,7 +27,7 @@ void Casilla::CreaCasilla(int type, char name[50],int color, int base_loan, int 
 	this->owner = -1;
 	this->effect = effect;
 	this->status = 1;
-	strcpy_s(this->name, 50, name);
+	strcpy(this->name,name);
 
 	return;
 }

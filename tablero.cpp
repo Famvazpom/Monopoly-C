@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "tablero.h"
-#include "casilla.h"
+
 
 
 tablero::tablero()

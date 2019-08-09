@@ -8,13 +8,10 @@ jugador::jugador()
 	this->posicion = 0;
 	this->free = true;
 	this->turnos_restantes = 0;
+	printf("Jugador Creado\n");
 }
 
 
-jugador::~jugador()
-{
-	printf("\nJugador eliminado\n");
-}
 
 void jugador::Mover_Jugador(int mov, tablero *mapa)
 {
