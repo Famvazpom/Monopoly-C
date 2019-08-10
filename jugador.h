@@ -14,7 +14,7 @@ public:
 		Mover_Jugador()
 		Comprar_Propiedad()
 	*/
-	void Mover_Jugador(int mov,tablero *mapa);
+
 	void Comprar_Propiedad();
 };
 

@@ -17,4 +17,5 @@ private:
 	tablero *tab;
 	int cant_jugadores;
 	void CambiaTurno();
+	void MueveJugador(int d1,int d2);
 };
